@@ -9,5 +9,6 @@ import faker from 'faker';
 // console.log(products);
 // document.querySelector('#dev-products').innerHTML = products;
 
-const msg = 'You have 0 item(s) in your cart';
+const randomNumber = faker.random.number();
+const msg = `You have ${randomNumber} item(s) in your cart`;
 document.querySelector('#dev-cart').innerHTML = `<div>${msg}</div>`;
