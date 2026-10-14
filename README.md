@@ -150,4 +150,4 @@ hint:
 - use shared: ['faker'] in module federation plugin
 - add bootstrap in both subproducts
 
-
+e) sub app has different div id from container div id
