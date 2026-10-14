@@ -1,14 +1,16 @@
 import faker from 'faker';
 
-// let products = '';
+const mount = (el) => {
+    const randomNumber = faker.random.number();
+    const msg = `You have ${randomNumber} item(s) in your cart`;
+    el.innerHTML = `<div>${msg}</div>`;
+};
 
-// for(let i=0; i< 5; i++){
-//     const name = faker.commerce.productName(); 
-//     products += `<div>${name}</div>\n`;
-// }
-// console.log(products);
-// document.querySelector('#dev-products').innerHTML = products;
+if (process.env.NODE_ENV === 'development') {
+    const el = document.querySelector('#dev-cart');
+    if (el) {
+        mount(el);
+    }
+}
 
-const randomNumber = faker.random.number();
-const msg = `You have ${randomNumber} item(s) in your cart`;
-document.querySelector('#dev-cart').innerHTML = `<div>${msg}</div>`;
+export { mount };

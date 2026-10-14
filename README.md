@@ -151,3 +151,4 @@ hint:
 - add bootstrap in both subproducts
 
 e) sub app has different div id from container div id
+  - implement to products as well as cart
