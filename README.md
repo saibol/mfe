@@ -2,7 +2,7 @@ micro frontend assignment:
 
 a) create products and container apps
 b) make necessary changes to consume or use products in container
-
+c) create and integrate cart module
 
 a) create products and container apps
 ------------------------------------------
@@ -136,4 +136,18 @@ new ModuleFederationPlugin({
 - create container/src/index.js file with content
 import('./bootstrap');
 
-7. 
+c) create and integrate cart module
+------------------------------------------
+1. create cart module on same line as products. 
+display message like : 
+You have 8629 item(s) in your cart
+hint : use random from faker to get number
+
+2. integrate cart in container
+
+d) remove duplicate loading of library
+hint: 
+- use shared: ['faker'] in module federation plugin
+- add bootstrap in both subproducts
+
+
