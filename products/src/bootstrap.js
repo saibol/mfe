@@ -1,7 +1,5 @@
 import faker from 'faker';
 
-
-
 const mount = (el) => {
     let products = '';
 
@@ -16,7 +14,7 @@ const mount = (el) => {
 
 if (process.env.NODE_ENV === 'development') {
     const el = document.querySelector('#dev-products');
-    if(el){
+    if (el) {
         mount(el);
     }
 }
